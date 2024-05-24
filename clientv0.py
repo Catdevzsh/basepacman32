@@ -73,7 +73,6 @@ frame_rate = 60
 # Game speed (delay between frames in milliseconds)
 game_speed = 100
 
-
 def draw_maze():
     for y in range(len(maze)):
         for x in range(len(maze[y])):
@@ -92,7 +91,6 @@ def draw_maze():
                     2,
                 )
 
-
 def draw_pacman():
     pygame.draw.circle(
         screen,
@@ -100,7 +98,6 @@ def draw_pacman():
         (pacman_x * cell_size + cell_size // 2, pacman_y * cell_size + cell_size // 2),
         cell_size // 2,
     )
-
 
 def draw_ghosts():
     for ghost in ghost_positions:
@@ -110,7 +107,6 @@ def draw_ghosts():
             (ghost["x"] * cell_size + cell_size // 2, ghost["y"] * cell_size + cell_size // 2),
             cell_size // 2,
         )
-
 
 def move_pacman(dx, dy):
     global pacman_x, pacman_y
@@ -125,7 +121,6 @@ def move_pacman(dx, dy):
     ):
         pacman_x = new_x
         pacman_y = new_y
-
 
 def move_ghosts():
     for ghost in ghost_positions:
@@ -144,7 +139,6 @@ def move_ghosts():
                 ghost["x"] = new_x
                 ghost["y"] = new_y
                 break  # Move only one step
-
 
 # Game loop
 clock = pygame.time.Clock()
