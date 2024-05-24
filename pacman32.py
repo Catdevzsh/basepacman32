@@ -210,7 +210,7 @@ def show_main_menu():
     while main_menu:
         screen.fill(black)
 
-        title_text = title_font.render("PYAC", True, white)
+        title_text = title_font.render("ULTRA PACMAN V0.1", True, white)
         title_rect = title_text.get_rect(center=(screen_width // 2, screen_height // 2 - 50))
         screen.blit(title_text, title_rect)
 
